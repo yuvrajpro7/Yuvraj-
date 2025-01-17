@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    display: block;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen */
+    width: 20%; /* 1/5 of the page width */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333;
+    z-index: 1;
+    transition: left 0.3s ease; /* Smooth transition */
+}
+
+.menu.show {
+    left: 0; /* Move into view */
+}
+
+.close-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    display: block;
+    text-align: right;
+}
+
+.menu a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 24px; /* Larger text */
+}
+
+.menu a:hover {
+    background-color: #555555;
+    color: #ffffff; /* Change color on hover */
+}
+
+.content {
+    margin-top: 50px; /* Adjust this value to match the height of the navbar */
+    padding: 20px;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: backgroundFade 10s infinite alternate;
+}
+@keyframes backgroundFade {
+    0% { background: linear-gradient(to right, #ffecd2, #fcb69f); }
+    100% { background: linear-gradient(to right, #fcb69f, #ffecd2); }
+}
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 700px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    top: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+p {
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+.button:active {
+    background-color: #3e8e41;
+}
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+.button:active {
+    background-color: #3e8e41;
+}
+.navbar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-icon {
+    color: #000000;
+    background-color: none;
+}
+.close-icon{
+  color: white;  
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    top: 10%;
+    left: 0.5%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; /* Adjust this value if needed */
+}
+
+.image-button {
+    margin: 0 15px;
+    padding: 80px 170px; /* Increased padding for bigger buttons */
+    font-size: 24px; /* Increased font size */
+    cursor: pointer;
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-position: center; /* Center the image */
+    color: #fff; /* White text color for better contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-button:hover {
+    transform: translateY(-5px);
+}
+
+.image-button:nth-child(1) {
+    background-image: url('C:/Users/RITU SINGH/Pictures/Camera Roll/CODE.png'); /* Replace with your image URL */
+}
+
+.image-button:nth-child(2) {
+    background-image: url('C:/Users/RITU SINGH/Pictures/Camera Roll/tennis.png'); /* Replace with your image URL */
+}
+
+.image-button:nth-child(3) {
+    background-image: url('C:/Users/RITU SINGH/Pictures/Camera Roll/plane.png'); /* Replace with your image URL */
+}
+
+.content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.content.active {
+    display: block;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    width: 50px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.demo{
+    color: #000000;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 100px;
+}
+.two{
+    color: white;
+    background: none;
+    background-color: none;
+    position: relative; 
+    z-index: 10;    
+}
+.doku{
+    position: relative; 
+    z-index: 10000000000; 
+}
+.menu1{
+    padding: 30px 40px;
+    left: 80px;
+    color: white;
+    font-size: 30px;
+    top: 5px;
+    background-color: none;
+    background: none;
+}
+.one{
+    top: 20px;
+}
+.top-layer {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+}
