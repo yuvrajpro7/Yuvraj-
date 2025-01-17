@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Passions</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="navbar" class="doku" class="top-layer">
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <div class="menu" id="menu" >
+            <button class="menu1" class="close-icon" onclick="toggleMenu()">×</button>
+            <a href="../index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="interests.html">Interests</a>
+            <a href="contact">Contact</a>
+        </div>
+    </div>
+    <center>
+        <h1 class="hello">I have a passion for coding, playing lawn tennis, and traveling.</h1>
+        <div class="button-container">
+            <button class="image-button" onclick="showContent('coding')">
+                <span class="demo">Coding</span>
+            </button>
+            <button class="image-button" onclick="showContent('tennis')">
+                <span class="demo">Sports</span>
+            </button>
+            <button class="image-button" onclick="showContent('traveling')">
+                <span class="demo">Traveling</span>
+            </button>
+        </div>
+
+        <div id="coding" class="content">
+            <button class="close" onclick="hideContent('coding')">×</button>
+            <h2>Coding</h2>
+            <p>I find immense joy in the world of coding. It allows me to create, innovate, and solve complex problems. I have proficiency in HTML, CSS, and JavaScript, which enables me to develop and design websites and applications. Whether it’s building a new web page, debugging a tricky piece of code, or learning a new programming language, coding constantly challenges and excites me. It’s a field where I can continuously grow and adapt, keeping up with the latest technological advancements.</p>
+        </div>
+
+        <div id="tennis" class="content">
+            <button class="close" onclick="hideContent('tennis')">×</button>
+            <h2>Playing Lawn Tennis</h2>
+            <p>Lawn tennis is not just a sport for me; it’s a way to stay fit and unwind. The thrill of a well-placed serve, the strategy involved in each rally, and the sheer physical exertion make it an exhilarating experience. Playing tennis helps me improve my agility, coordination, and mental focus. Plus, it’s a great way to socialize and compete in a friendly environment.</p>
+        </div>
+
+        <div id="traveling" class="content">
+            <button class="close" onclick="hideContent('traveling')">×</button>
+            <h2>Traveling</h2>
+            <p>Traveling is my gateway to exploring new cultures, cuisines, and landscapes. Each journey offers a unique adventure, whether it’s hiking through scenic trails, visiting historical landmarks, or immersing myself in local traditions. Traveling broadens my horizons, enriches my understanding of the world, and provides countless memorable experiences.</p>
+        </div>
+    </center>
+
+    <script src="../main.js"></script>
+</body>
+</html>
